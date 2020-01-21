@@ -11,12 +11,12 @@ let renderText = (text) => {
     let item = document.createElement("div");
     item.textContent = text;
     listContainer.appendChild(item);
-}
+};
 
 let clearTextBox = () => {
     // let textInput = document.getElementByName("favoriteForm");
     document.forms.favoriteForm.reset();
-}
+};
 
 let wishButton = document.querySelector("#saveItem");
 
@@ -36,10 +36,7 @@ wishButton.addEventListener("click", (e) => {
         clearTextBox();
         thing.focus();
         e.preventDefault();
-        
     }
-
-    
 });
 
 
